@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" title="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>遊戲概念</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 240px;">
+        <a href="#1" class="w3-bar-item w3-button">一、概述</a>
+        <a href="#2" class="w3-bar-item w3-button">二、遊戲概念</a>
+        <a href="../../index.html" class="w3-bar-item w3-button">回首頁</a>
+    </div>
+    <div class="w3-container"
+        style="margin-left: 300px;margin-right: 5%; margin-top: 50px; padding: 50px;border-radius: 25px; background: #EEEEEE;">
+        <div id="title">
+            <h2 style="text-align:center">遊戲概念</h2>
+            <hr class="common">
+        </div>
+
+        <div id="1">
+            <h3>一、概述</h3>
+            <p>此處為說明遊戲概念、特色等。</p>
+            <hr class="common">
+        </div>
+        <div id="2">
+            <h3>二、遊戲概念</h3>
+            <ul>
+                <li>遊戲簡介：本遊戲為2D橫向動作解謎遊戲，目前預定發布的平台為PC（Windows/Mac）。玩家須操縱主角並利用其「翻轉」能力與世界互動，穿梭於兩個世界之間。並利用在不同世界中輪廓相同而內容相異所形成的物件解開謎題前進，從而找回自己關鍵性的記憶，最後回到現實世界。</li>
+                <li>遊戲特色：融合翻轉機制的謎題：玩家在遊戲中必須活用「翻轉」－試圖思考相同輪廓而不同內容之物件的關聯性，並與場景、NPC等互動，進而解開謎題。</li>
+                <li>遊戲想法：藉由探索主兩個人格之間的轉換，讓玩家瞭解到人看待世界的方式，重新省思自己的內心世界。是否現在其實正處於主角的「處境」？自己是否曾「遺忘」那份關鍵性的記憶？</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function myAccFunc(targetId) {
+            var x = document.getElementById(targetId);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myDropFunc() {
+            var x = document.getElementById("demoDrop");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

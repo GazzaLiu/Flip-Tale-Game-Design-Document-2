@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" title="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>遊戲概念</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 240px;">
+        <a href="#1" class="w3-bar-item w3-button">一、概述</a>
+        <a href="#2" class="w3-bar-item w3-button">二、活動點數</a>
+        <a href="#3" class="w3-bar-item w3-button">三、活動服裝</a>
+        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('4')">四、活動獎勵<i
+                class="angle down icon"></i></button>
+        <div id="4" class="w3-hide w3-white w3-card">
+            <a href="#4.1" class="w3-bar-item w3-button">（一）、活動點數競技獎勵</a>
+            <a href="#4.2" class="w3-bar-item w3-button">（二）、活動點數累積獎勵</a>
+            <a href="#4.3" class="w3-bar-item w3-button">（三）、其他獎勵</a>
+        </div>
+        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('5')">五、活動商城<i
+                class="angle down icon"></i></button>
+        <div id="5" class="w3-hide w3-white w3-card">
+            <a href="#5.1" class="w3-bar-item w3-button">（一）、限定蛋池</a>
+            <a href="#5.2" class="w3-bar-item w3-button">（二）、禮包規劃</a>
+        </div>
+        <a href="#6" class="w3-bar-item w3-button">六、活動貨幣</a>
+        <a href="#7" class="w3-bar-item w3-button">七、活動公告</a>
+        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('8')">八、更動一覽<i
+                class="angle down icon"></i></button>
+        <div id="8" class="w3-hide w3-white w3-card">
+            <a href="#8.1" class="w3-bar-item w3-button">（一）、程式</a>
+            <a href="#8.2" class="w3-bar-item w3-button">（二）、美術</a>
+        </div>
+        <a href="#9" class="w3-bar-item w3-button">九、附件</a>
+        <a href="../../index.html" class="w3-bar-item w3-button">回首頁</a>
+    </div>
+    <div class="w3-container"
+        style="margin-left: 300px;margin-right: 5%; margin-top: 50px; padding: 50px;border-radius: 25px; background: #EEEEEE;">
+        <div id="title">
+            <h2 style="text-align:center">活動企劃書－2020新年活動</h2>
+            <p style="text-align:right">更新日期：2020/01/20</p>
+            <hr class="common">
+        </div>
+
+        <div id="1">
+            <h3>一、概述</h3>
+            <p>2020新年活動是個為期三週（<font color="red">1/20～2/9</font>
+                ）的活動。在活動期間內，玩家可以透過進行事件來獲得活動點數（壓歲零錢）。活動點數將作為期間內人生競技場排名的依據，排名獎勵也將改為獲得活動貨幣（元寶）。此外，當玩家活動點數達到某些數量門檻時，也可以直接獲得固定數量的活動貨幣或其他獎勵。活動貨幣可向神秘商人兌換各式道具，本次活動主要獎勵品為新年服裝（沿用去年新年服裝，並另外設計一件背飾）。
+            </p>
+            <p>2/9當天將跨中午12:00掛維修，並上新企劃表單。此外，必須改回除神秘商人外的活動期間暫時性的更動。而神秘商人商品（元寶兌換）可以持續兌換至活動結束後一週維修（2/16）為止。</p>
+            <p>
+                <font color="red">紅字：高亮標記。</font><br>
+                <font color="blue">藍字：超連結。</font>
+            </p>
+            <hr class="common">
+        </div>
+        <div id="2">
+            <h3>二、活動點數</h3>
+            <p>活動期間內，進行一般事件點（學習或工作）即可獲得活動點數，每週10點。友情事件、休假或自主行動則無法獲得活動點數。此外根據職業階數與成功情況，玩家可再獲得額外的點數，規劃如下：</p>
+            <ul>
+                <li>職業階數為二階：+1</li>
+                <li>職業階數為三階：+2</li>
+                <li>職業階數為四階：+3</li>
+                <li>職業階數為五階：+4</li>
+                <li>成功：+1</li>
+                <li>超級成功：+2</li>
+            </ul>
+            <p>點數標示方法與去年新年活動一致（進行或連續進行事件），特別注意到點數需要<font color="red">顯示被Buff過的數值</font>。</p>
+            <img src="img/2-1.png" width="800px">
+            <hr class="common">
+        </div>
+        <div id="3">
+            <h3>三、活動服裝</h3>
+            <p>活動服裝為活動最主要的獎勵品。其中包含了去年新年活動的一套服裝：活動鞋子、活動配件、活動上身、活動下身與3星活動背飾，並需要另外設計一件新的4星活動背飾。其中配件與鞋子將作為最主要的活動獎勵供玩家獲得，而配件又較鞋子難以獲得。活動服裝對應如下：
+            </p>
+            <img src="img/3-1.png" width="800px">
+            <ul>
+                <li>活動鞋子（去年）：新年如意鞋</li>
+                <li>活動配件（去年）：新年招財帽</li>
+                <li>活動上身（去年）：新年福氣上衣</li>
+                <li>活動下身（去年）：新年吉利褲裙</li>
+                <li>3星活動背飾（去年）：新年大發爆竹</li>
+                <li>4星活動背飾（新增）：新年金發爆竹</li>
+            </ul>
+            <p>活動期間內，上述活動服裝均改為萬能系且技能改為：<font color="red">獲得活動點數時，可以再額外獲得X%點數</font>（詳細算法請參照<a
+                    href="../buff_list/doc.html"
+                    style="color:blue;">Buff詳細一覽</a>之ActivityBonus），並使服裝技能容易升級。當活動結束後，除背飾外活動服裝系別將改為新年系，並置換為原先之服裝技能。新4星活動背飾服裝技能將更改為：工作事件全屬性成長+X%。
+            </p>
+            <p>活動服裝技能（ActivityBonus）之額外獲得X%點數X值設計如下：</p>
+            <img src="img/3-2.png" width="800px">
+            <hr class="common">
+        </div>
+        <div id="4">
+            <h3>四、活動獎勵</h3>
+            <div id="4.1">
+                <h4>（一）、活動點數競技獎勵</h4>
+                <p>活動期間內，人生競技場將改為使用活動點數進行排名。每輪競技賽季為期七天，統一於週日中午進行結算（和平時人生競技場規則相同）。由於活動時間為期三週，故競技場總共將結算三次獎勵。排行名次獎勵將改為發放活動貨幣與鈔票，百分比獎勵將改為發放+5能量飲料。
+                </p>
+                <p>此外，由於活動名次需要將名次區間切分得較細，故排行獎勵頁面將改為放置一張美術圖片供玩家檢視。該圖片應包含：名次獎勵、百分比獎勵與額外規則（賽季結算時間）。本次活動中，所有競技場（新人／進階／冠軍）獎勵均相同，因此可以使用同一張美術圖片。
+                </p>
+                <img src="img/4-1.png" width="800px"><br><br>
+                <img src="img/4-2.png" width="800px">
+                <hr class="common">
+                <p>名次獎勵與百分比獎勵如下，所有競技場（新人／進階／冠軍）獎勵均相同：</p>
+                <img src="img/4-3.PNG" width="300px">
+                <img src="img/4-4.PNG" width="200px">
+                <hr class="common">
+            </div>
+            <div id="4.2">
+                <h4>（二）、活動點數累積獎勵</h4>
+                <p>除人生競技場可獲得排行獎勵外，當玩家活動點數達到某些數量門檻時，玩家也可以直接獲得固定的獎勵道具（例如：100點→獲得20活動貨幣；16000點→獲得活動鞋子兌換卷等）。由於此功能尚未實作於活動競技場頁面，故本次活動將以人生成就頁面來代替此功能。成就判斷上需要新增
+                    <font color="red">「持有活動點數達到X（看當下）」</font>的判斷。</p>
+                <p>活動結束後，需要移除活動的人生成就。</p>
+                <img src="img/4-5.PNG" width="800px">
+                <hr class="common">
+            </div>
+            <div id="4.3">
+                <h4>（三）、其他獎勵</h4>
+                <p>活動期間內，每天將寄送一封信件至每個玩家的信箱，每封信件有七天的可領取時間（即今日
+                    00:00寄送至七日後00:00失效），以此作為活動的登入獎勵。信件內容物為：+5能量飲料x10。若玩家取得活動期間所有獎勵，共可獲得：+5能量飲料x210。</p>
+                <p>活動期間內，完成每日目標的「每日目標達成獎勵」，可以獲得：活動貨幣x10、活動鞋子碎片x20。若玩家取得活動期間所有獎勵，共可獲得：活動貨幣x210、活動鞋子碎片x420。</p>
+                <hr class="common">
+            </div>
+        </div>
+        <div id="5">
+            <h3>五、活動商城</h3>
+            <div id="5.1">
+                <h4>（一）、限定蛋池</h4>
+                <p>活動期間內，精品服裝轉蛋將改為活動蛋池。玩家可以花費100／900鈔票分別進行活動蛋池的1／10抽。活動蛋池內將新增活動服裝：活動上身／下身／配件，每一抽機率如下：</p>
+                <ul>
+                    <li>活動上身（新年福氣上衣）：4%</li>
+                    <li>活動下身（新年吉利褲裙）：4%</li>
+                    <li>活動配件（新年招財帽）：8%</li>
+                </ul>
+                <hr class="common">
+            </div>
+            <div id="5.2">
+                <h4>（二）、禮包規劃</h4>
+                <p>活動期間內，商城頁面將調整如下：</p>
+                <img src="img/5-1.png" width="800px"><br><br>
+                <img src="img/5-2.png" width="800px">
+                <hr class="common">
+                <p>活動期間內，禮包頁面將額外販售三種活動禮包如下：</p>
+                <img src="img/5-3.PNG" width="250px">
+                <img src="img/5-4.PNG" width="250px">
+                <img src="img/5-5.PNG" width="250px">
+                <hr class="common">
+            </div>
+        </div>
+        <div id="6">
+            <h3>六、活動貨幣</h3>
+            <p>如上所述，活動貨幣來源可整理如下：</p>
+            <ol>
+                <li>活動點數競技獎勵</li>
+                <li>活動點數累積獎勵</li>
+                <li>活動商城禮包</li>
+            </ol>
+            <p>活動期間內，神秘商人將改為同去年新年活動的模式：</p>
+            <ol>
+                <li>穿著新年服飾</li>
+                <li>24小時常駐於主世界地圖（午夜0點刷新且停留24小時）</li>
+                <li>玩家購買商品後該商品並不會更改為售出狀態，可以重複購買</li>
+            </ol>
+            <p>神秘商人頁面調整如下：</p>
+            <img src="img/6-1.png" width="800px"><br><br>
+            <p>新增商品（使用活動貨幣購買），並排擠部分可由神秘寶石購買之商品。活動期間新增商品如下：</p>
+            <img src="img/6-2.PNG" width="450px"><br><br>
+            <p>此外，也可以透過20張貴賓卷來購買4星活動背飾。</p>
+            <hr class="common">
+        </div>
+        <div id="7">
+            <h3>七、活動公告</h3>
+            <p>活動公告重點如下：</p>
+            <ol>
+                <li>說明活動點數獲得機制（進行一般事件）</li>
+                <li>說明活動貨幣機制（如何獲得與神秘商人商品）</li>
+                <li>說明新年服飾與服裝效果（包含轉蛋）</li>
+                <li>說明登入獎勵與每日任務</li>
+            </ol>
+            <hr class="common">
+        </div>
+        <div id="8">
+            <h3>八、更動一覽</h3>
+            <div id="8.1">
+                <h4>（一）、程式</h4>
+                <p>以下列出本次需要新增的功能，<font color="red">活動結束後功能不須調整</font>：</p>
+                <ol>
+                    <li>人生成就可以判斷持有活動點數</li>
+                    <li>競技場排行獎勵根據玩家參與賽季，索引對應獎勵</li>
+                    <li>新增Buff：獲得活動點數時，可以再額外獲得X%點數。進行事件畫面必須顯示被Buff過的數值</li>
+                </ol>
+                <p>以下列出本次需要新增的功能，<font color="red">活動結束必須要改回來</font>：</p>
+                <ol>
+                    <li>競技場改為比較活動點數</li>
+                    <li>競技場頁面改為顯示活動點數</li>
+                    <li>競技場排行獎勵頁面，改為顯示圖片，活動結束後改為按照企劃表單顯示</li>
+                    <li>介面顯示的驚嘆號，活動結束後拔除</li>
+                    <li>神秘商人：穿著新年服飾、可重複購買、顯示活動貨幣，活動結束後改回一般狀態</li>
+                </ol>
+                <hr class="common">
+            </div>
+            <div id="8.2">
+                <h4>（二）、美術</h4>
+                <p>注意檔名規則：如果發現新圖檔名與既有圖片檔名重複（即取該檔名後，會取代掉既有圖片），表示企劃表單不允許同時填寫多個檔名。在這種情況下，取檔名者必須<font color="red">
+                        自行將既有圖片檔名改名或移動位置</font>，以確保新圖檔不會取代掉既有圖檔。</p>
+                <table class="ui celled table">
+                    <thead>
+                        <tr>
+                            <th>名稱</th>
+                            <th>分類</th>
+                            <th>說明</th>
+                            <th>檔名</th>
+                        </tr>
+                        <tr>
+                            <td>活動點數</td>
+                            <td>特殊道具</td>
+                            <td>壓歲零錢（需要新畫）</td>
+                            <td>activityCoin</td>
+                        </tr>
+                        <tr>
+                            <td>活動貨幣</td>
+                            <td>特殊道具</td>
+                            <td>元寶（若不需更改可直接沿用去年的元寶）</td>
+                            <td>activityGold</td>
+                        </tr>
+                        <tr>
+                            <td>新年金發爆竹</td>
+                            <td>服裝卡片</td>
+                            <td>活動服裝，需要標示壓歲零錢+++</td>
+                            <td>道具：ItemWing00023<br>外觀男=外觀女：Wing300023<br>倉庫男=倉庫女：CardWing300023</td>
+                        </tr>
+                        <tr>
+                            <td>新年大發爆竹</td>
+                            <td>服裝卡片</td>
+                            <td>活動服裝，去年已畫過，但需要標示壓歲零錢++</td>
+                            <td>道具：ItemWing00021<br>外觀男=外觀女：Wing300021<br>倉庫男=倉庫女：CardWing300021</td>
+                        </tr>
+                        <tr>
+                            <td>新年招財帽</td>
+                            <td>服裝卡片</td>
+                            <td>活動服裝，去年已畫過，但需要標示壓歲零錢+</td>
+                            <td>道具：ItemFitting1000201<br>外觀男：Fitting11000201<br>外觀女：Fitting21000201<br>倉庫男：CardFitting11000201<br>倉庫女：CardFitting11000201
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>新年福氣上衣</td>
+                            <td>服裝卡片</td>
+                            <td>活動服裝，去年已畫過，但需要標示壓歲零錢++</td>
+                            <td>道具：ItemTops1000201<br>外觀男：Tops11000201<br>外觀女：Tops21000201<br>倉庫男：CardTops11000201<br>倉庫女：CardTops21000201
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>新年吉利褲裙</td>
+                            <td>服裝卡片</td>
+                            <td>活動服裝，去年已畫過，但需要標示壓歲零錢++</td>
+                            <td>道具：ItemBottom1000201<br>外觀男：Bottom11000201<br>外觀女：Bottom21000201<br>倉庫男：CardBottom11000201<br>倉庫女：CardBottom21000201
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>新年如意鞋</td>
+                            <td>服裝卡片</td>
+                            <td>活動服裝，去年已畫過，但需要標示壓歲零錢+</td>
+                            <td>道具：ItemShoe1000201<br>外觀男：Shoe11000201<br>外觀女：Shoe21000201<br>倉庫男：CardShoe11000201<br>倉庫女：CardShoe21000201
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>新年金發爆竹兌換卷</td>
+                            <td>一般道具</td>
+                            <td>新年金發爆竹的服裝兌換卷</td>
+                            <td>ItemN200436</td>
+                        </tr>
+                        <tr>
+                            <td>新年招財帽兌換卷</td>
+                            <td>一般道具</td>
+                            <td>新年招財帽的服裝兌換卷</td>
+                            <td>ItemN200437</td>
+                        </tr>
+                        <tr>
+                            <td>新年福氣上衣兌換卷</td>
+                            <td>一般道具</td>
+                            <td>新年福氣上衣的服裝兌換卷</td>
+                            <td>ItemN200438</td>
+                        </tr>
+                        <tr>
+                            <td>新年吉利褲裙兌換卷</td>
+                            <td>一般道具</td>
+                            <td>新年吉利褲裙的服裝兌換卷</td>
+                            <td>ItemN200439</td>
+                        </tr>
+                        <tr>
+                            <td>新年如意鞋兌換卷</td>
+                            <td>一般道具</td>
+                            <td>新年如意鞋的服裝兌換卷</td>
+                            <td>ItemN200440</td>
+                        </tr>
+                        <tr>
+                            <td>新年金發爆竹碎片</td>
+                            <td>服裝碎片</td>
+                            <td>新年金發爆竹的服裝碎片</td>
+                            <td>ShardWing00023</td>
+                        </tr>
+                        <tr>
+                            <td>招財帽帽喜氣包</td>
+                            <td>商城禮包</td>
+                            <td>商品內容：鈔票x320、元寶x220、+5能量飲料x10、新年招財帽兌換卷x1，定價570<br>商品圖片必須標示：+65%增值（商品價值）、新年招財帽效果：獲得壓歲零錢+
+                            </td>
+                            <td>Store_Pack101</td>
+                        </tr>
+                        <tr>
+                            <td>能量高昇滿足包</td>
+                            <td>商城禮包</td>
+                            <td>商品內容：鈔票x900、+5能量飲料x66，定價1350<br>商品圖片必須標示：+80%增值（商品價值）、總能量330</td>
+                            <td>Store_Pack102</td>
+                        </tr>
+                        <tr>
+                            <td>金發爆竹豪華包</td>
+                            <td>商城禮包</td>
+                            <td>商品內容：鈔票x2020、元寶x888、+5能量飲料x40、新年金發爆竹兌換卷x1<br>商品圖片必須標示：+90%增值（商品價值）、新年金發爆竹效果：獲得壓歲零錢x2倍（小字），最高可到x6倍（大字）
+                            </td>
+                            <td>Store_Pack103</td>
+                        </tr>
+                        <tr>
+                            <td>主題禮包按鈕</td>
+                            <td>介面圖片</td>
+                            <td>按鈕改為新年版本</td>
+                            <td>store065</td>
+                        </tr>
+                        <tr>
+                            <td>主畫面成就按鈕</td>
+                            <td>介面圖片</td>
+                            <td>主畫面成就按鈕改為新年版本</td>
+                            <td>homePage062</td>
+                        </tr>
+                        <tr>
+                            <td>新年成就獎盃</td>
+                            <td>介面圖片</td>
+                            <td>人生成就頁面中，活動成就左方獎盃icon替換為特殊新年成就獎盃</td>
+                            <td>Achieve002</td>
+                        </tr>
+                        <tr>
+                            <td>活動轉蛋</td>
+                            <td>特殊圖片</td>
+                            <td>轉蛋池規劃請參照「五、（一）、限定蛋池」<br>轉蛋圖片必須標示：新年福氣上衣與新年吉利褲裙效果：獲得壓歲零錢x1.5，最高可到x3倍；新年招財帽效果：獲得壓歲零錢+
+                            </td>
+                            <td>Gacha010</td>
+                        </tr>
+                        <tr>
+                            <td>排名獎勵</td>
+                            <td>特殊圖片</td>
+                            <td>獎勵內容請參照「四、（一）、活動點數競技獎勵」，所有競技場獎勵均相同，因此僅需一張圖片</td>
+                            <td>RankingReward101</td>
+                        </tr>
+                    </thead>
+                </table>
+                <hr class="common">
+            </div>
+        </div>
+        <div id="9">
+            <h3>九、附件</h3>
+            <ul>
+                <li>表單：<a href="file/sheet1.xlsx" style="color:blue;">sheet1.xlsx</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function myAccFunc(targetId) {
+            var x = document.getElementById(targetId);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myDropFunc() {
+            var x = document.getElementById("demoDrop");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
