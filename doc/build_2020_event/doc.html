@@ -15,11 +15,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 240px;">
         <a href="#1" class="w3-bar-item w3-button">一、概述</a>
-        <a href="#2" class="w3-bar-item w3-button">二、序幕（Prologue）調整</a>
-        <a href="#3" class="w3-bar-item w3-button">三、新手教學與第一關調整</a>
-        <a href="#4" class="w3-bar-item w3-button">四、第一關結尾調整</a>
-        <a href="#5" class="w3-bar-item w3-button">五、其餘調整</a>
-        <a href="#6" class="w3-bar-item w3-button">六、Steam相關</a>
+        <a href="#2" class="w3-bar-item w3-button">二、主畫面或UI相關調整</a>
+        <a href="#3" class="w3-bar-item w3-button">三、序幕（Prologue）調整</a>
+        <a href="#4" class="w3-bar-item w3-button">四、新手教學與第一關調整</a>
+        <a href="#5" class="w3-bar-item w3-button">五、結尾調整</a>
+        <a href="#6" class="w3-bar-item w3-button">六、即時回饋機制</a>
+        <a href="#7" class="w3-bar-item w3-button">七、其他調整</a>
+        <a href="#8" class="w3-bar-item w3-button">八、Steam相關</a>
         <a href="../../index.html" class="w3-bar-item w3-button">回首頁</a>
     </div>
     <div class="w3-container"
@@ -31,16 +33,30 @@
 
         <div id="1">
             <h3>一、概述</h3>
-            <p>此版本為對應Steam 2020夏季遊戲節所建置的Demo版本，該版本包含完整的第一關。第一關完成後即結束，並不會進入第二關。</p>
+            <p>此版本為對應Steam 2020夏季遊戲節所建置的Demo版本，該版本包含完整的第一關。第一關過完後即結束，並不會進入第二關。</p>
             <hr class="common">
         </div>
         <div id="2">
-            <h3>二、序幕（Prologue）調整</h3>
-            <p>序幕（Prologue）將因應新的劇情，調整為新的文字劇情。其過場形式使用過場腳本編輯器編寫。</p>
+            <h3>二、主畫面或UI相關調整</h3>
+            <h5>初始畫面</h5>
+            <p>初始畫面改為按下「任意按鈕」均可翻轉進入主畫面，並將提示文字上移，如下所示：</p>
+            <img src="img/start.png" width="500">
+            <hr class="common">
+            <h5>主畫面設定</h5>
+            <p>於自訂按紐頁面時，玩家不可將按鈕改為以下的觸發方式：</p>
+            <ol>
+                <li>跳脫鍵（Esc）</li>
+                <li>於滑鼠上的任意按鍵</li>
+            </ol>
             <hr class="common">
         </div>
         <div id="3">
-            <h3>三、新手教學與第一關調整</h3>
+            <h3>三、序幕（Prologue）調整</h3>
+            <p>序幕（Prologue）將因應新的劇情，調整為新的文字劇情。其過場形式使用文字圖片過場，以腳本編輯器編寫。</p>
+            <hr class="common">
+        </div>
+        <div id="4">
+            <h3>四、新手教學與第一關調整</h3>
             <p>新手教學使用第一關地圖（前三張），呈現於畫面上。形式為區域性教學（由左到右觸發），當主角於特定位置時，畫面顯示「教學頁面」。每個區域所對應的教學頁面如下所示（紅框處）：</p>
             <img src="img/tutorial.png" width="600"><br><br>
             <p>教學頁面具有以下性質：</p>
@@ -56,21 +72,33 @@
                 <li>翻轉相關筆記，改為進入1-1反面時觸發</li>
                 <li>主角疑問（我是誰我在哪）筆記，改為進入1-2時觸發</li>
                 <li>渡鴉從墓碑上移除，改為站在1-2的桿子上（樹中渡鴉飛走仍然保留）。藤蔓上之渡鴉仍然保留</li>
+                <li>藤蔓中上的渡鴉，改為站在藤蔓下方的梗上</li>
             </ul>
             <hr class="common">
         </div>
-        <div id="4">
-            <h3>四、第一關結尾調整</h3>
+        <div id="5">
+            <h3>五、結尾調整</h3>
             <p>第一關結尾調整進行以下調整：</p>
             <img src="img/ending.png" width="600"><br><br>
             <hr class="common">
         </div>
-        <div id="5">
-            <h3>五、其餘調整</h3>
+        <div id="6">
+            <h3>六、即時回饋機制</h3>
+            <p>某些時機點需要顯示即時回饋，以對話方式顯示（如下所示）。程式則根據時機點的鍵值索引文字。</p>
+            <img src="img/feedback.PNG" width="500"><br><br>
+            <p>目前顯示需求如下：</p>
+            <ul>
+                <li>too_heavy：第一關拾取鍋子或鐵梯時，手持籃子或桶子翻面時。</li>
+            </ul>
+            <hr class="common">
+        </div>
+        <div id="7">
+            <h3>七、其他調整</h3>
             <h5>美術部分</h5>
             <ol>
                 <li>第一關過關畫面需要新增「待續...」等相關資訊，表示該版本為Demo版</li>
                 <li>筆記本開啟內頁，需要顯示照片</li>
+                <li>設定頁面的左右按紐，改為醒目的白色按鈕</li>
             </ol>
             <hr class="common">
             <h5>音效部分</h5>
@@ -79,8 +107,8 @@
             </ol>
             <hr class="common">
         </div>
-        <div id="6">
-            <h3>六、Steam相關</h3>
+        <div id="8">
+            <h3>八、Steam相關</h3>
             <p>活動簡圖如下：</p>
             <img src="img/steam_2020_event.PNG" width="500">
         </div>
