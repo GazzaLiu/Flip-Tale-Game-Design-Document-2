@@ -21,7 +21,7 @@
             <a href="#2.1" class="w3-bar-item w3-button">（一）、3-1</a>
             <a href="#2.2" class="w3-bar-item w3-button">（二）、3-2</a>
             <a href="#2.3" class="w3-bar-item w3-button">（三）、3-3</a>
-			<a href="#2.4" class="w3-bar-item w3-button">（四）、3-4</a>
+            <a href="#2.4" class="w3-bar-item w3-button">（四）、3-4</a>
         </div>
         <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('3')">三、謎題<i
                 class="angle down icon"></i></button>
@@ -29,6 +29,8 @@
             <a href="#3.1" class="w3-bar-item w3-button">（一）、Puzzle A</a>
             <a href="#3.2" class="w3-bar-item w3-button">（二）、Puzzle B</a>
         </div>
+        <a href="#4" class="w3-bar-item w3-button">四、買賣機制</a>
+        <a href="#5" class="w3-bar-item w3-button">五、狀態轉移說明</a>
         <a href="../../index.html" class="w3-bar-item w3-button">回首頁</a>
     </div>
     <div class="w3-container"
@@ -70,6 +72,7 @@
             <h3>三、謎題</h3>
             <div id="3.1">
                 <h4>（一）、Puzzle A</h4>
+                <!-- <img src="img/PA.png" width="1000"> -->
                 <hr class="common">
             </div>
             <div id="3.2">
@@ -77,6 +80,46 @@
                 <img src="img/PB.png" width="1000">
                 <hr class="common">
             </div>
+        </div>
+        <div id="4">
+            <h3>四、買賣機制</h3>
+            <img src="img/purchase.png" width="750">
+            <hr class="common">
+        </div>
+        <div id="5">
+            <h3>五、狀態轉移說明</h3>
+            <p>以下狀態轉移如果沒有標註［對話］，就是代表透過指令方式進行狀態轉移。</p>
+            <h5>A1</h5>
+            <ui>
+                <li>（僅與金幣有關，但暫不實作）</li>
+            </ui>
+            <h5>B1</h5>
+            <ui>
+                <li>unreceived -> finished：抵達船梯子重生點</li>
+            </ui>
+            <h5>C1</h5>
+            <ui>
+                <li>unreceived -> first：保險箱謎題（Puzzle A）被觸發過</li>
+                <li>first -> second：保險箱謎題進入第二題</li>
+                <li>second -> third：保險箱謎題進入第三題</li>
+                <li>third -> finished：保險箱謎題完成</li>
+            </ui>
+            <h5>C2</h5>
+            <ui>
+                <li>unreceived -> first：［對話］父親</li>
+                <li>first -> second：找書謎題（Puzzle B）進入第二題</li>
+                <li>second -> third：找書謎題進入第三題</li>
+                <li>third -> finished：找書謎題完成</li>
+            </ui>
+            <h5>D1</h5>
+            <ui>
+                <li>unreceived -> received：［對話］林德柏格</li>
+                <li>received -> finished：打撈到飛機</li>
+            </ui>
+            <h5>E1</h5>
+            <ui>
+                <li>（僅作為保留編號用，暫不實作）</li>
+            </ui>
         </div>
     </div>
 
