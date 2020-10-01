@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" title="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>關卡－第一關（關卡調整）</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 240px;">
+        <a href="#1" class="w3-bar-item w3-button">一、概述</a>
+        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc('2')">二、調整事項<i
+                class="angle down icon"></i></button>
+        <div id="2" class="w3-hide w3-white w3-card">
+            <a href="#2.1" class="w3-bar-item w3-button">（一）、高優先度調整</a>
+            <a href="#2.2" class="w3-bar-item w3-button">（二）、低優先度調整</a>
+        </div>
+        <a href="../../index.html" class="w3-bar-item w3-button">回首頁</a>
+    </div>
+    <div class="w3-container" style="margin-left: 300px;margin-right: 5%; margin-top: 50px; padding: 50px;border-radius: 25px; background: #EEEEEE;">
+        <div id="title">
+            <h2 style="text-align:center">關卡－第一關（關卡調整）</h2>
+            <hr class="common">
+        </div>
+
+        <div id="1">
+            <h3>一、概述</h3>
+            <p>此處為第一關待調整事項，並不包含第一關完整的關卡企劃。</p>
+            <hr class="common">
+        </div>
+        <div id="2">
+            <h3>二、調整事項</h3>
+            <div id="2.1">
+                <h4>（一）、高優先度調整</h4>
+                <h5>移除鈍斧頭</h5>
+                <p>移除鈍斧頭這個道具，當玩家使用三次斧頭後，斧頭直接損壞而不會變成鈍斧頭。在道具表上需要移除該道具，相關對話或筆記本。</p>
+                <hr class="common">
+                <h5>裝填火槍機制</h5>
+                <p>裝填火槍機制調整如下：</p>
+                <img src="img/h1.png" width="600">
+                <hr class="common">
+                <h5>藤蔓雲調整</h5>
+                <p>藤蔓的雲調整為上半部為平(表示可以站上)，正反兩面皆需要調整。如下所示：</p>
+                <img src="img/h2.png" width="400">
+                <hr class="common">
+            </div>
+            <div id="2.2">
+                <h4>（二）、低優先度調整</h4>
+                <h5>洞穴謎題</h5>
+                <p>在正反洞穴牆上各畫一部分的塗鴉，聯集後則是正確解答。此外在謎題部分，改為正反兩面八個符號都不一樣。玩家需要在正確的那面、轉到正確符號並按下按鈕才可開啟洞穴。設計上會把正確解答放在反面，若玩家轉到正確解答，一定要按反面的按鈕才可以開門。若是按正面的按鈕則無反應。
+                </p>
+                <img src="img/l1.png" width="600">
+                <hr class="common">
+                <h5>蘑菇房屋比例尺調整</h5>
+                <img src="img/l2.png" width="600">
+                <hr class="common">
+                <h5>不同景深移動速度不同</h5>
+                <p>第一關部分場景可讓天空、山、近景部分移動速度不同，營造生動感，如下所示：</p>
+                <img src="img/l3.png" width="500">
+                <hr class="common">
+                <h5>花／火把新增遮罩</h5>
+                <p>在洞穴內的花／火把上新增遮罩，如下所示：</p>
+                <img src="img/l4.png" width="300">
+                <hr class="common">
+                <h5>梯子正反面調整</h5>
+                <p>將桶子那邊的輪廓改成和梯子類似。</p>
+                <img src="img/l5.png" width="300">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myAccFunc(targetId) {
+            var x = document.getElementById(targetId);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myDropFunc() {
+            var x = document.getElementById("demoDrop");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
